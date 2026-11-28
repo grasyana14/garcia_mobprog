@@ -10,15 +10,16 @@ class NewsfeedCard extends StatelessWidget {
   final dynamic profileImage;
   final int? numOfLikes;
   final bool? hasImage;
-  final dynamic image;
   final bool? hasprofileImage;
+  final String? postImage;
+
   const NewsfeedCard({
     super.key,
     required this.userName,
     required this.postContent,
     required this.date,
     required this.profileImage,
-    required this.image,
+    this.postImage,
     this.numOfLikes,
     this.hasImage,
     this.hasprofileImage,
@@ -84,7 +85,7 @@ class NewsfeedCard extends StatelessWidget {
             ),
             SizedBox(height: ScreenUtil().setHeight(5)),
             hasImage == true
-                ? const Image(image: AssetImage('assets/images/prof1.jpg'))
+                ? Image(image: AssetImage(postImage!))
                 : SizedBox.shrink(),
 
             Row(

@@ -34,6 +34,12 @@ class _NotificationScreenState extends State<NotificationScreen> {
             name: 'Jane Smith',
             post: 'I totally agree with you!',
           ),
+          Divider(),
+          NotificationWidget(
+            description: 'commented on your post',
+            name: 'Jane Smith',
+            post: 'I totally agree with you!',
+          ),
         ],
       ),
     );

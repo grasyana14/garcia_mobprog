@@ -15,7 +15,7 @@ class NewsfeedScreen extends StatelessWidget {
           numOfLikes: 202434,
           hasImage: true,
           hasprofileImage: true,
-          image: 'assets/images/prof1.jpg',
+          postImage: 'assets/images/prof1.jpg',
           profileImage: 'assets/images/profile1.jpg',
         ),
         NewsfeedCard(
@@ -25,7 +25,7 @@ class NewsfeedScreen extends StatelessWidget {
           numOfLikes: 3000,
           hasImage: true,
           hasprofileImage: true,
-          image: 'assets/images/profile1.jpg',
+          postImage: 'assets/images/profile1.jpg',
           profileImage: 'assets/images/profile2.jpg',
         ),
       ],
