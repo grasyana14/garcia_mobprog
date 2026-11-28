@@ -7,7 +7,7 @@ class NewsfeedCard extends StatelessWidget {
   final String userName;
   final String postContent;
   final String date;
-  final String profileImage;
+  final dynamic profileImage;
   final int? numOfLikes;
   final bool? hasImage;
   final dynamic image;
@@ -20,7 +20,7 @@ class NewsfeedCard extends StatelessWidget {
     required this.profileImage,
     required this.image,
     this.numOfLikes,
-    this.hasImage, 
+    this.hasImage,
     this.hasprofileImage,
   });
 
@@ -87,20 +87,6 @@ class NewsfeedCard extends StatelessWidget {
                 ? const Image(image: AssetImage('assets/images/prof1.jpg'))
                 : SizedBox.shrink(),
 
-              
-            SizedBox(height: ScreenUtil().setHeight(5)),
-            // post Content
-            CustomText(
-              text: profileImage,
-              fontSize: ScreenUtil().setSp(12),
-              color: Colors.black,
-            ),
-            SizedBox(height: ScreenUtil().setHeight(5)),
-            hasprofileImage == true
-                ? const Image(image: AssetImage('assets/images/profile1.jpg'))
-                : SizedBox.shrink(),
-
-                
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -112,7 +98,7 @@ class NewsfeedCard extends StatelessWidget {
                   label: CustomText(
                     text: numOfLikes.toString(),
                     fontSize: ScreenUtil().setSp(12),
-                    color: fbDarkPrimary  ,
+                    color: fbDarkPrimary,
                   ),
                 ),
                 CustomText(

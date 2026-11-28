@@ -26,7 +26,7 @@ class NewsfeedScreen extends StatelessWidget {
           hasImage: true,
           hasprofileImage: true,
           image: 'assets/images/profile1.jpg',
-          profileImage: 'assets/images/profile1.jpg',
+          profileImage: 'assets/images/profile2.jpg',
         ),
       ],
     );

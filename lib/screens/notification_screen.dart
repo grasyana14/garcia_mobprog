@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:garcia_mobprog/widgets/notification_widget.dart'; 
-
+import 'package:garcia_mobprog/widgets/notification_widget.dart';
 
 class NotificationScreen extends StatefulWidget {
   const NotificationScreen({super.key});
@@ -19,7 +18,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
       child: Column(
         children: [
           NotificationWidget(
-           description: 'liked your post',
+            description: 'liked your post',
             name: 'John Doe',
             post: 'Flutter is awesome!',
           ),
