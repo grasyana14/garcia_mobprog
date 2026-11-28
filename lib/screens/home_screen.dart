@@ -29,21 +29,17 @@ class _HomeScreenState extends State<HomeScreen> {
           fontFamily: 'Klavika',
           fontWeight: FontWeight(700),
         ),
-      ), 
+      ),
       body: PageView(
         controller: _pageController,
-        children: const <Widget>
-      [
-        NewsfeedScreen(),
-        NotificationScreen(),
-      ],
+        children: const <Widget>[NewsfeedScreen(), NotificationScreen()],
         onPageChanged: (page) {
           setState(() {
             _selectedIndex = page;
           });
-      },
-    ),
-     bottomNavigationBar: BottomNavigationBar(
+        },
+      ),
+      bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: false,
         showSelectedLabels: false,
         onTap: _onTappedBar,
